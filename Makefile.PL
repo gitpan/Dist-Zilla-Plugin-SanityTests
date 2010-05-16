@@ -12,6 +12,8 @@ my %WriteMakefileArgs = (
   'ABSTRACT' => 'Release tests to avoid insanity',
   'AUTHOR' => 'Florian Ragwitz <rafl@debian.org>',
   'BUILD_REQUIRES' => {
+    'File::Find' => '0',
+    'File::Temp' => '0',
     'Test::More' => '0'
   },
   'CONFIGURE_REQUIRES' => {
@@ -28,7 +30,7 @@ my %WriteMakefileArgs = (
     'Test::NoTabs' => '0',
     'namespace::autoclean' => '0'
   },
-  'VERSION' => '0.01',
+  'VERSION' => '0.02',
   'test' => {
     'TESTS' => 't/*.t'
   }

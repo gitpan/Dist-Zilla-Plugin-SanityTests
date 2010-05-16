@@ -4,6 +4,8 @@
       "Florian Ragwitz <rafl@debian.org>"
    ],
    "build_requires" : {
+      "File::Find" : "0",
+      "File::Temp" : "0",
       "Test::More" : "0"
    },
    "configure_requires" : {
@@ -29,7 +31,7 @@
       "homepage" : "http://search.cpan.org/dist/Dist-Zilla-Plugin-SanityTests",
       "repository" : "git://github.com/rafl/dist-zilla-plugin-sanitytests.git"
    },
-   "version" : "0.01",
+   "version" : "0.02",
    "x_Dist_Zilla" : {
       "plugins" : [
          {
@@ -130,7 +132,7 @@
          {
             "class" : "Dist::Zilla::Plugin::SanityTests",
             "name" : "@FLORA/SanityTests",
-            "version" : null
+            "version" : "0.01"
          },
          {
             "class" : "Dist::Zilla::Plugin::MetaResources",
@@ -162,6 +164,11 @@
             },
             "name" : "Prereq",
             "version" : "2.101310"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::CompileTests",
+            "name" : "CompileTests",
+            "version" : "1.100740"
          },
          {
             "class" : "Dist::Zilla::Plugin::FinderCode",

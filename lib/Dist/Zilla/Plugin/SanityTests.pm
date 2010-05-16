@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::Plugin::SanityTests::AUTHORITY = 'cpan:FLORA';
 }
 BEGIN {
-  $Dist::Zilla::Plugin::SanityTests::VERSION = '0.01';
+  $Dist::Zilla::Plugin::SanityTests::VERSION = '0.02';
 }
 # ABSTRACT: Release tests to avoid insanity
 
