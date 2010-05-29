@@ -1,9 +1,9 @@
 
 
 This archive contains the distribution Dist-Zilla-Plugin-SanityTests,
-version 0.02:
+version 0.03:
 
-  Release tests to avoid insanity
+  DEPRECATED - Release tests to avoid insanity
 
 This software is copyright (c) 2010 by Florian Ragwitz.
 

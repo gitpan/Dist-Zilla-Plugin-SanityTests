@@ -3,9 +3,9 @@ BEGIN {
   $Dist::Zilla::Plugin::SanityTests::AUTHORITY = 'cpan:FLORA';
 }
 BEGIN {
-  $Dist::Zilla::Plugin::SanityTests::VERSION = '0.02';
+  $Dist::Zilla::Plugin::SanityTests::VERSION = '0.03';
 }
-# ABSTRACT: Release tests to avoid insanity
+# ABSTRACT: DEPRECATED - Release tests to avoid insanity
 
 use Moose;
 use namespace::autoclean;
@@ -23,9 +23,13 @@ __PACKAGE__->meta->make_immutable;
 
 =head1 NAME
 
-Dist::Zilla::Plugin::SanityTests - Release tests to avoid insanity
+Dist::Zilla::Plugin::SanityTests - DEPRECATED - Release tests to avoid insanity
 
 =head1 DESCRIPTION
+
+B<NOTE:> This module is deprecated. Please use
+L<Dist::Zilla::Plugin::NoTabsTests> and
+L<Dist::Zilla::Plugin::EOLTests> instead.
 
 This is an extension of L<Dist::Zilla::Plugin::InlineFiles>, providing
 the following files:

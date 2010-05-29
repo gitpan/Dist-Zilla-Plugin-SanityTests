@@ -9,13 +9,9 @@ use ExtUtils::MakeMaker 6.31;
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'Release tests to avoid insanity',
+  'ABSTRACT' => 'DEPRECATED - Release tests to avoid insanity',
   'AUTHOR' => 'Florian Ragwitz <rafl@debian.org>',
-  'BUILD_REQUIRES' => {
-    'File::Find' => '0',
-    'File::Temp' => '0',
-    'Test::More' => '0'
-  },
+  'BUILD_REQUIRES' => {},
   'CONFIGURE_REQUIRES' => {
     'ExtUtils::MakeMaker' => '6.31'
   },
@@ -30,7 +26,7 @@ my %WriteMakefileArgs = (
     'Test::NoTabs' => '0',
     'namespace::autoclean' => '0'
   },
-  'VERSION' => '0.02',
+  'VERSION' => '0.03',
   'test' => {
     'TESTS' => 't/*.t'
   }
